@@ -1,8 +1,8 @@
-import type { ApiInfo, ApiData } from "../types";
-import { API_INFO_URL, BROKEN_CONNECTION_MSG } from "../constants";
-import { Client } from "../client";
-import { SPACE_FETCHER_URL } from "../constants";
-import { join_urls, transform_api_info } from "../helpers/api_info";
+import type { ApiInfo, ApiData } from "../types.js";
+import { API_INFO_URL, BROKEN_CONNECTION_MSG } from "../constants.js";
+import { Client } from "../client.js";
+import { SPACE_FETCHER_URL } from "../constants.js";
+import { join_urls, transform_api_info } from "../helpers/api_info.js";
 
 export async function view_api(this: Client): Promise<any> {
 	if (this.api_info) return this.api_info;

@@ -4,7 +4,7 @@ import {
 	QUEUE_FULL_MSG,
 	SPACE_METADATA_ERROR_MSG,
 	SPACE_NOT_FOUND_MSG
-} from "../constants";
+} from "../constants.js";
 import type {
 	ApiData,
 	ApiInfo,
@@ -12,8 +12,8 @@ import type {
 	JsApiData,
 	EndpointInfo,
 	Status
-} from "../types";
-import { determine_protocol } from "./init_helpers";
+} from "../types.js";
+import { determine_protocol } from "./init_helpers.js";
 
 export const RE_SPACE_NAME = /^[a-zA-Z0-9_\-\.]+\/[a-zA-Z0-9_\-\.]+$/;
 export const RE_SPACE_DOMAIN = /.*hf\.space\/{0,1}.*$/;

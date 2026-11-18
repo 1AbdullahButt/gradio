@@ -8,20 +8,20 @@ import type {
 	Config,
 	Dependency,
 	SubmitIterable
-} from "../types";
+} from "../types.js";
 
 import {
 	skip_queue,
 	post_message,
 	handle_payload,
 	sign_file_urls
-} from "../helpers/data";
-import { get_zerogpu_origin } from "../helpers/zerogpu";
+} from "../helpers/data.js";
+import { get_zerogpu_origin } from "../helpers/zerogpu.js";
 import {
 	handle_message,
 	map_data_to_params,
 	process_endpoint
-} from "../helpers/api_info";
+} from "../helpers/api_info.js";
 import {
 	BROKEN_CONNECTION_MSG,
 	NO_API_INFO_MSG,
@@ -31,16 +31,16 @@ import {
 	RESET_URL,
 	CANCEL_URL,
 	WS_PROTOCOL_MSG
-} from "../constants";
-import { apply_diff_stream, close_stream } from "./stream";
-import { Client } from "../client";
+} from "../constants.js";
+import { apply_diff_stream, close_stream } from "./stream.js";
+import { Client } from "../client.js";
 import {
 	is_automatic_run,
 	read_run_history_storage,
 	start_run_history,
 	update_run_history,
 	update_run_inputs
-} from "./run_history";
+} from "./run_history.js";
 
 export function submit(
 	this: Client,

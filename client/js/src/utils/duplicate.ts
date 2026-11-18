@@ -2,16 +2,16 @@ import {
 	get_space_hardware,
 	hardware_types,
 	set_space_timeout
-} from "../helpers/spaces";
-import type { DuplicateOptions } from "../types";
-import { Client } from "../client";
-import { SPACE_METADATA_ERROR_MSG } from "../constants";
+} from "../helpers/spaces.js";
+import type { DuplicateOptions } from "../types.js";
+import { Client } from "../client.js";
+import { SPACE_METADATA_ERROR_MSG } from "../constants.js";
 import {
 	get_cookie_header,
 	normalise_token_option,
 	parse_and_set_cookies
-} from "../helpers/init_helpers";
-import { process_endpoint } from "../helpers/api_info";
+} from "../helpers/init_helpers.js";
+import { process_endpoint } from "../helpers/api_info.js";
 
 export async function duplicate(
 	app_reference: string,

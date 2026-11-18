@@ -1,6 +1,6 @@
-import type { Client } from "..";
-import { BROKEN_CONNECTION_MSG, UPLOAD_URL } from "../constants";
-import type { UploadResponse } from "../types";
+import type { Client } from "../index.js";
+import { BROKEN_CONNECTION_MSG, UPLOAD_URL } from "../constants.js";
+import type { UploadResponse } from "../types.js";
 
 export async function upload_files(
 	this: Client,

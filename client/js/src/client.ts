@@ -13,16 +13,16 @@ import type {
 	client_return,
 	SubmitIterable,
 	GradioEvent
-} from "./types";
-import { view_api } from "./utils/view_api";
-import { upload_files } from "./utils/upload_files";
-import { upload, FileData } from "./upload";
-import { handle_blob } from "./utils/handle_blob";
-import { post_data } from "./utils/post_data";
-import { predict } from "./utils/predict";
-import { duplicate } from "./utils/duplicate";
-import { submit } from "./utils/submit";
-import { RE_SPACE_NAME, process_endpoint } from "./helpers/api_info";
+} from "./types.js";
+import { view_api } from "./utils/view_api.js";
+import { upload_files } from "./utils/upload_files.js";
+import { upload, FileData } from "./upload.js";
+import { handle_blob } from "./utils/handle_blob.js";
+import { post_data } from "./utils/post_data.js";
+import { predict } from "./utils/predict.js";
+import { duplicate } from "./utils/duplicate.js";
+import { submit } from "./utils/submit.js";
+import { RE_SPACE_NAME, process_endpoint } from "./helpers/api_info.js";
 import {
 	map_names_to_ids,
 	normalise_token_option,
@@ -30,20 +30,20 @@ import {
 	resolve_config,
 	get_jwt,
 	parse_and_set_cookies
-} from "./helpers/init_helpers";
-import { check_and_wake_space, check_space_status } from "./helpers/spaces";
-import { initialize_zerogpu_handshake } from "./helpers/zerogpu";
-import { initialize_console_forwarding_for_app } from "./helpers/console_forward";
-import { open_stream, readable_stream, close_stream } from "./utils/stream";
-import { clear_run_history } from "./utils/run_history";
-import { sign_config_file_urls, sign_file_urls } from "./helpers/data";
+} from "./helpers/init_helpers.js";
+import { check_and_wake_space, check_space_status } from "./helpers/spaces.js";
+import { initialize_zerogpu_handshake } from "./helpers/zerogpu.js";
+import { initialize_console_forwarding_for_app } from "./helpers/console_forward.js";
+import { open_stream, readable_stream, close_stream } from "./utils/stream.js";
+import { clear_run_history } from "./utils/run_history.js";
+import { sign_config_file_urls, sign_file_urls } from "./helpers/data.js";
 import {
 	API_INFO_ERROR_MSG,
 	APP_ID_URL,
 	CONFIG_ERROR_MSG,
 	HEARTBEAT_URL,
 	COMPONENT_SERVER_URL
-} from "./constants";
+} from "./constants.js";
 declare const BROWSER_BUILD: boolean;
 
 export class Client {

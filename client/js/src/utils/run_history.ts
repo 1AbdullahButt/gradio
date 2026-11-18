@@ -1,4 +1,4 @@
-import type { Dependency, GradioEvent, StatusMessage } from "../types";
+import type { Dependency, GradioEvent, StatusMessage } from "../types.js";
 
 // Keyed on the app id, so two different apps served on the same port never
 // share a history. The id is regenerated whenever an app starts, so a restart

@@ -1,17 +1,17 @@
-import { update_object, walk_and_store_blobs } from "../helpers/data";
+import { update_object, walk_and_store_blobs } from "../helpers/data.js";
 import {
 	Command,
 	type ApiData,
 	type EndpointInfo,
 	type JsApiData
-} from "../types";
-import { FileData } from "../upload";
-import type { Client } from "..";
+} from "../types.js";
+import { FileData } from "../upload.js";
+import type { Client } from "../index.js";
 import {
 	FILE_PROCESSING_ERROR_MSG,
 	NODEJS_FS_ERROR_MSG,
 	ROOT_URL_ERROR_MSG
-} from "../constants";
+} from "../constants.js";
 
 export async function handle_blob(
 	this: Client,

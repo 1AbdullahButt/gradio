@@ -1,5 +1,5 @@
-import { Client } from "../client";
-import type { Dependency, PredictReturn } from "../types";
+import { Client } from "../client.js";
+import type { Dependency, PredictReturn } from "../types.js";
 
 export async function predict<T = unknown>(
 	this: Client,

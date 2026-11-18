@@ -1,17 +1,17 @@
-import { initialize_console_forwarding_on_space } from "./helpers/console_forward";
+import { initialize_console_forwarding_on_space } from "./helpers/console_forward.js";
 
-export { Client } from "./client";
+export { Client } from "./client.js";
 
-export { predict } from "./utils/predict";
-export { submit } from "./utils/submit";
-export { upload_files } from "./utils/upload_files";
-export { FileData, upload, prepare_files } from "./upload";
-export { handle_file } from "./helpers/data";
-export { get_zerogpu_origin } from "./helpers/zerogpu";
+export { predict } from "./utils/predict.js";
+export { submit } from "./utils/submit.js";
+export { upload_files } from "./utils/upload_files.js";
+export { FileData, upload, prepare_files } from "./upload.js";
+export { handle_file } from "./helpers/data.js";
+export { get_zerogpu_origin } from "./helpers/zerogpu.js";
 export {
 	initialize_console_forwarding,
 	is_console_forward_origin_allowed
-} from "./helpers/console_forward";
+} from "./helpers/console_forward.js";
 
 // custom pages such as gr.Server ones capture from the moment they import the client
 initialize_console_forwarding_on_space();
@@ -31,7 +31,7 @@ export {
 	type RunHistoryScope,
 	type StoredRunComponent,
 	type StoredRun
-} from "./utils/run_history";
+} from "./utils/run_history.js";
 export {
 	asset_url,
 	connect_bucket,
@@ -41,7 +41,7 @@ export {
 	list_user_buckets,
 	type HistoryRecord,
 	type HistoryResult
-} from "./utils/bucket_sync";
+} from "./utils/bucket_sync.js";
 
 export type {
 	SpaceStatus,
@@ -54,10 +54,10 @@ export type {
 	Payload,
 	Config,
 	ValidationError
-} from "./types";
+} from "./types.js";
 
-export { MISSING_CREDENTIALS_MSG } from "./constants";
+export { MISSING_CREDENTIALS_MSG } from "./constants.js";
 
 // todo: remove in @gradio/client v1.0
-export { client } from "./client";
-export { duplicate_space as duplicate } from "./client";
+export { client } from "./client.js";
+export { duplicate_space as duplicate } from "./client.js";

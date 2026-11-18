@@ -1,5 +1,5 @@
 // frame side of the gradio-console postMessage protocol v1, pull model
-import { get_zerogpu_origin } from "./zerogpu";
+import { get_zerogpu_origin } from "./zerogpu.js";
 
 export const CONSOLE_FORWARD_PROTOCOL = "gradio-console";
 export const CONSOLE_FORWARD_VERSION = 1;

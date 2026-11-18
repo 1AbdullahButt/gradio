@@ -1,5 +1,5 @@
-import { BROKEN_CONNECTION_MSG, SSE_URL } from "../constants";
-import type { Client } from "../client";
+import { BROKEN_CONNECTION_MSG, SSE_URL } from "../constants.js";
+import type { Client } from "../client.js";
 import { stream } from "fetch-event-stream";
 
 export async function open_stream(this: Client): Promise<void> {

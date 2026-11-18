@@ -1,5 +1,5 @@
-import type { Client } from "./client";
-import { filesize } from "./utils/filesize";
+import type { Client } from "./client.js";
+import { filesize } from "./utils/filesize.js";
 export async function upload(
 	this: Client,
 	file_data: FileData[],

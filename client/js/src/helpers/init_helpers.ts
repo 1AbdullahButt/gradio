@@ -1,4 +1,4 @@
-import type { ClientOptions, Config } from "../types";
+import type { ClientOptions, Config } from "../types.js";
 import {
 	CONFIG_ERROR_MSG,
 	CONFIG_URL,
@@ -8,9 +8,9 @@ import {
 	PRIVATE_SPACE_MSG,
 	SPACE_METADATA_ERROR_MSG,
 	UNAUTHORIZED_MSG
-} from "../constants";
-import { Client } from "..";
-import { join_urls, process_endpoint } from "./api_info";
+} from "../constants.js";
+import { Client } from "../index.js";
+import { join_urls, process_endpoint } from "./api_info.js";
 
 /**
  * This function is used to resolve the URL for making requests when the app has a root path.

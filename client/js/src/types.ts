@@ -1,6 +1,6 @@
 // API Data Types
 
-import { hardware_types } from "./helpers/spaces";
+import { hardware_types } from "./helpers/spaces.js";
 import type { SvelteComponent } from "svelte";
 import type { ComponentType } from "svelte";
 

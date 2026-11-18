@@ -1,6 +1,6 @@
-import { BROKEN_CONNECTION_MSG } from "../constants";
-import type { PostResponse } from "../types";
-import { Client } from "..";
+import { BROKEN_CONNECTION_MSG } from "../constants.js";
+import type { PostResponse } from "../types.js";
+import { Client } from "../index.js";
 
 export async function post_data(
 	this: Client,

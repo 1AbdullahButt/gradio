@@ -2,9 +2,9 @@ import {
 	RUNTIME_URL,
 	SLEEPTIME_URL,
 	SPACE_STATUS_ERROR_MSG
-} from "../constants";
-import { RE_SPACE_NAME } from "./api_info";
-import type { SpaceStatusCallback } from "../types";
+} from "../constants.js";
+import { RE_SPACE_NAME } from "./api_info.js";
+import type { SpaceStatusCallback } from "../types.js";
 
 export async function check_space_status(
 	id: string,

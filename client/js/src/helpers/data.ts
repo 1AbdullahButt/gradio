@@ -8,8 +8,8 @@ import {
 	Command,
 	type Dependency,
 	type ComponentMeta
-} from "../types";
-import { FileData } from "../upload";
+} from "../types.js";
+import { FileData } from "../upload.js";
 
 const is_node =
 	typeof process !== "undefined" && process.versions && process.versions.node;
